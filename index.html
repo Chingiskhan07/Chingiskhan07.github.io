@@ -1,24 +1,151 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>My Web Page</title>
+<html lang="ru">
+<head>  
+  <title>My First Webpage</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-color: #fff7e6;
+    }
+    h1, h2, h3 {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .internal-note { font-style: italic; color: #b85c00; }
+  </style>
 </head>
 <body>
-    <h1>Hello, my name is Ainabek Chingiskhan and I am a student.</h1>
-    <h2>About Me : Junior Web Developer</h2>
-    <h3><p><b>Fat</b> <i>Cursive</i></p></h3>
-    <ol><li>1 2 3</li><li>4 5 6</li><li>7 8 9</li></ol>
-    <ul><li>1 2 3</li><li>4 5 6</li><li>7 8 9</li></ul>
-    <form>
-        <label>Name:</label>
-        <input type="text" value="Write your name">
-        <input type="submit" value="Submit">
-        </form>
-    <br><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRn_Elp3DM6kjnwt4pM_KhZe7diXFjKC7bJ4Z7h_leTpI_v2IIdXPDP6O0&s=10" alt="Trulli" width="1250" height="333">
-    <br><button>Абу Бандит! Нажми меня</button><br>
-    <hr>
-    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Click me</a>
-    <br>
-    <a href="https://github.com/Chingiskhan07" target="_blank">Мой профиль на GitHub</a>
+
+  <div class="header">
+    <h1 id="main-heading">Ainabek Chingiskhna</h1>
+    <h2>Web-Frontend</h2>
+    <h3>About Me</h3>
+  </div>
+
+  <div class="main-content">
+
+    <p><span class="highlight">Мне 19 лет и учусь в 2 курсе! Люблю плавать</span></p>
+    <p>Мой любимый предмет: <span class="highlight">Физкультура</span>.</p>
+
+    <p style="color: #c1121f;">Inline CSS</p>
+
+    <p class="internal-note">Internal CSS</p>
+
+    <h3>Мои хобби</h3>
+    <ol>
+      <li>Катание на велосипеде</li>
+      <li>Читать манхвы</li>
+      <li>Заниматься спортом</li>
+    </ol>
+
+    <h3>Любимые сайты</h3>
+    <ul>    
+      <li><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
+      <li><a href="https://soundcloud.com/discover" target="_blank">SoundCloud</a></li>
+      <li><a href="https://store.steampowered.com/" target="_blank">Steam</a></li>
+    </ul>
+
+    <img src="MyPhotoChingiskhan.jpg" alt="Моё фото" class="profile-img">
+
+    <p>     
+      <a href="https://www.linkedin.com/in/chingiskhanainabek/" target="_blank">My Linkedin</a> |
+      <a href="https://richup.io/" target="_blank">Monopoly</a>
+    </p>
+
+    <button type="button">Click Me</button>
+
+    <h3>Weekly Schedule</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Subject</th>
+          <th>Day</th>
+          <th>Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>English</td>
+          <td>Monday</td>
+          <td>8:00-9:00</td>
+        </tr>
+        <tr>
+          <td>Physical Education</td>
+          <td>Tuesday</td>
+          <td>8:00-9:00</td>
+        </tr>
+        <tr>
+          <td>Paint</td>
+          <td>Friday</td>
+          <td>10:00-11:00</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Two-column layout using table</h3>
+    <table class="layout-table">
+      <tr>
+        <td class="menu-cell">
+          <strong>Menu</strong>
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        </td>
+        <td class="content-cell">   
+          <strong>Main content</strong>
+          <ul>
+            <li>Студент AITU</li>
+            <li>Frontend-разработчик-новичок</li>
+            <li>Любитель футбола ⚽</li>
+        </ul>
+        </td>
+      </tr>
+    </table>
+
+    <h3>My Mood Today</h3>
+    <p>Сегодня у меня отличное настроение 😎 😱 🤯</p>
+
+    <h3>Contact Form</h3>
+    <form action="#" method="post">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" placeholder="Введите имя" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" placeholder="example@mail.com" required><br><br>
+
+      <label for="color">Favorite Color:</label><br>
+      <input type="color" id="color" name="color" value="#FED066"><br><br>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <h3>Box Model Example</h3>
+    <div class="box-model">box model</div>
+
+    <h3>CSS Positioning</h3>
+    <div class="position-area">
+        <div class="static-box">static position</div>
+        <div class="relative-box">relative position</div>
+        <div class="absolute-box">absolute position</div>
+    </div>
+
+    <h3>CSS Sizing</h3>
+    <p class="sizing-demo">Hello Teacher! Sizing Demo</p>
+    
+    <h3>Float and Clear</h3>
+    <div class="clearfix">
+        <div class="float-left">Float Left</div>
+        <div class="float-right">Float Right</div>
+    </div>
+<p class="after-float">
+  Этот текст идёт после float-блоков. Свойство clear: both убирает обтекание, поэтому текст стоит ниже, а не заезжает на блоки.
+</p>
+
+  <div class="footer">
+    <p>&copy; 2026 Ainabek Chingiskhan. Assignment 1.</p>
+  </div>
+
 </body>
 </html>
