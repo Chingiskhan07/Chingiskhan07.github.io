@@ -8,7 +8,6 @@ body {
 }
 
 h1, h2, h3 { color: #3E000C; }
-#main-heading { text-align: center; font-size: 2.5rem; margin-top: 0; }
 
 .header, .footer {
   background-color: #3E000C;
@@ -94,7 +93,7 @@ label { font-weight: bold; }
 
 .static-box, .float-left, .float-right { background-color: #3E000C; color: #FFECD1; }
 .relative-box, .sizing-demo { background-color: #FFECD1; color: #3E000C; }
-.absolute-box { position: absolute; top: 60px; right: 20px; background-color: #3E000C; color: #FFECD1; }
+.absolute-box { position: absolute; bottom: -25px ;background-color: #3E000C; color: #FFECD1; }
 .position-area { position: relative; min-height: 180px;}
 
 .sizing-demo {
